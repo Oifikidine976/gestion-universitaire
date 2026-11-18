@@ -14,3 +14,18 @@ body { margin: 0; font-family: Arial, sans-serif; background: var(--clair); colo
 .bouton:hover { background: var(--vert); }
 .bouton:disabled { opacity: 0.6; cursor: wait; }
 .lien { background: none; border: none; color: var(--bleu); text-decoration: underline; cursor: pointer; }
+.onglets { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.onglet { padding: 8px 14px; border: 1px solid var(--bleu); background: #fff; color: var(--bleu); border-radius: 6px; cursor: pointer; }
+.onglet.actif { background: var(--bleu); color: #fff; }
+.formulaire-gestion { background: #fff; padding: 20px; border-radius: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 25px; }
+.formulaire-gestion h2, .formulaire-gestion .erreur, .formulaire-gestion .succes, .actions { grid-column: 1 / -1; }
+.succes { color: var(--vert); margin: 0; }
+.actions { display: flex; gap: 15px; align-items: center; }
+.tableau { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
+.tableau th, .tableau td { padding: 10px; border-bottom: 1px solid #e3e3e3; text-align: left; }
+.tableau th { background: var(--bleu); color: #fff; }
+.lien.danger { color: #b00020; }
+@media (max-width: 700px) {
+  .formulaire-gestion { grid-template-columns: 1fr; }
+  .tableau { display: block; overflow-x: auto; }
+}
