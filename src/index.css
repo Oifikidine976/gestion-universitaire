@@ -6,3 +6,11 @@ body { margin: 0; font-family: Arial, sans-serif; background: var(--clair); colo
 .entete a, .entete button { color: #fff; text-decoration: none; margin-left: 15px; background: none; border: none; font-size: 1rem; cursor: pointer; }
 .entete a.active { text-decoration: underline; }
 .marque { font-weight: bold; font-size: 1.3rem; margin-left: 0 !important; }
+.carte-formulaire { max-width: 420px; margin: 40px auto; background: #fff; padding: 25px; border-radius: 10px; display: flex; flex-direction: column; gap: 14px; }
+.champ { display: flex; flex-direction: column; gap: 5px; }
+.champ input, .champ select { padding: 9px; border: 1px solid #aaa; border-radius: 5px; font-size: 1rem; }
+.erreur { color: #b00020; margin: 0; }
+.bouton { padding: 10px; background: var(--bleu); color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+.bouton:hover { background: var(--vert); }
+.bouton:disabled { opacity: 0.6; cursor: wait; }
+.lien { background: none; border: none; color: var(--bleu); text-decoration: underline; cursor: pointer; }
