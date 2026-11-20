@@ -6,12 +6,16 @@ export default function Navbar() {
 
   return (
     <header className="entete">
-      <NavLink to="/" className="marque">Université Horizon</NavLink>
+      <NavLink to="/" className="marque">
+        Université Horizon
+      </NavLink>
       <nav>
         <NavLink to="/">Accueil</NavLink>
         {user && <NavLink to="/formulaires">Enregistrement</NavLink>}
         {user && <NavLink to="/gestion">Gestion</NavLink>}
-        {user && role === "admin" && <NavLink to="/dashboard">Tableau de bord</NavLink>}
+        {user && role === "admin" && (
+          <NavLink to="/dashboard">Tableau de bord</NavLink>
+        )}
         {user ? (
           <button onClick={deconnexion}>Déconnexion</button>
         ) : (
